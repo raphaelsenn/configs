@@ -25,20 +25,3 @@ export COLOR_BROWN='\e[0;33m'
 export COLOR_YELLOW='\e[1;33m'
 export COLOR_GRAY='\e[1;30m'
 export COLOR_LIGHT_GRAY='\e[0;37m'
-. "$HOME/.cargo/env"
-
-[[ -f ~/.bashrc ]] && . ~/.bashrc # ghcup-env
-# >>> juliaup initialize >>>
-
-# !! Contents within this block are managed by juliaup !!
-
-case ":$PATH:" in
-    *:/Users/klicki/.juliaup/bin:*)
-        ;;
-
-    *)
-        export PATH=/Users/klicki/.juliaup/bin${PATH:+:${PATH}}
-        ;;
-esac
-
-# <<< juliaup initialize <<<
